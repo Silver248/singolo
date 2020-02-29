@@ -147,3 +147,20 @@ td.img-words p:nth-child(2) {
     padding-right: 21px;
 }
 
+div.portfolio {
+    height: 868px;
+    background-color: #2d303a;
+
+}
+
+
+
+div.line {
+    height: 6px;
+    background-color: #323746;
+}
+
+div.about-us {
+    height: 728px;
+    background-color: #f2f2f2;
+}
