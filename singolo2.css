@@ -86,8 +86,8 @@ div.iPhone {
 
 
 
-div.services{
-    height: 493px;
+div.services {
+    height: 425px;
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
@@ -149,11 +149,18 @@ td.img-words p:nth-child(2) {
 
 
 
+div.after-services {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+
+
 div.portfolio {
     height: 794px;
     background-color: #2d303a;
     padding-left: 40px;
-    padding-top: 74px;
+    padding-top: 135px;
 }
 
 p.portfolio-header {
@@ -217,7 +224,7 @@ div.portfolio-images {
 
 
 
-div.line {
+div.after-portfolio {
     height: 6px;
     background-color: #323746;
 }
@@ -286,3 +293,7 @@ div.soc-netw img {
     padding-right: 4px;
 }
 
+div.after-about-us {
+    height: 6px;
+    background-color: #ffffff;
+}
