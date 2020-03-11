@@ -15,11 +15,14 @@
 
 
 
-* {
-    max-width: 1020px;
+body {
+    width: 100%;
 }
 
 header.header {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 89px;
     display: flex;
     text-transform: uppercase;
@@ -49,7 +52,7 @@ div.singolo-label p {
 ul.menu-top{
     display: flex;
     font-size: 12px;
-    padding-right: 10px;
+    padding-right: 9px;
     padding-top: 10px;
 }
 
@@ -72,6 +75,9 @@ a.menu-a:hover {
 
 
 div.under-header {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 6px;
     background-color: #323746;
 }
@@ -79,23 +85,31 @@ div.under-header {
 
 
 div.slider{
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 594px;
     display: flex;
     background-color: #f06c64;
     flex-wrap: wrap;
-
 }
 
 div.iPhone {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 10px;
+    padding: 0px 39px 5px 43px;
 }
 
+div.iPhone img:nth-child(2){
+    padding-right: 20px;
+}
 
 div.under-slider {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 6px;
     background-color: #ea676b;
 }
@@ -103,7 +117,10 @@ div.under-slider {
 
 
 div.services {
-    height: 425px;
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 493px;
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
@@ -131,7 +148,7 @@ div.before-table p:nth-child(2) {
 }
 
 table.table-services {
-    margin-top: 48px;
+    margin-top: 47px;
     display: flex;
 }
 
@@ -147,8 +164,9 @@ td.img-words p:first-child {
     font-weight: 400;
     line-height: 17.86px;
     vertical-align: top;
-    padding-left: 20px;
+    padding-left: 21px;
     padding-right: 21px;
+    padding-bottom: 2px;
 }
 
 td.img-words p:nth-child(2) {
@@ -157,16 +175,17 @@ td.img-words p:nth-child(2) {
     font-size: 12px;
     font-weight: 400;
     line-height: 21.56px;
-    padding-bottom: 35px;
     width: 220px;
-    padding-left: 20px;
-    padding-top: 8px;
-    padding-right: 21px;
+    padding: 8px 21px 32px 20px;
+    hyphens: auto;
+    text-align: justify;
 }
 
 
-
 div.after-services {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 7px;
     background-color: #ffffff;
 }
@@ -174,7 +193,10 @@ div.after-services {
 
 
 div.portfolio {
-    height: 794px;
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 863px;
     background-color: #2d303a;
     padding-left: 40px;
     padding-top: 68px;
@@ -217,7 +239,6 @@ a.portfolio-btn {
     line-height: 21.56px;
     padding: 3px 7px 3px 7px;
     margin-right: 5px;
-    
     border-radius: 4px;
     border: 1px solid #767e9e;
 }
@@ -232,6 +253,7 @@ div.portfolio-images {
     max-width: 1020px;
     flex-wrap: wrap;
     padding-top: 19px;
+    padding-left: 1px;
 }
 
 .portfolio-images img {
@@ -239,9 +261,16 @@ div.portfolio-images {
     padding-bottom: 20px;
 }
 
+div.portfolio-images img:nth-child(n+13) {
+    display: none;
+}
+
 
 
 div.after-portfolio {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 6px;
     background-color: #323746;
 }
@@ -250,7 +279,10 @@ div.after-portfolio {
 
 
 div.about-us {
-    height: 660px;
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 728px;
     background-color: #f2f2f2;
     padding-left: 40px;
     padding-top: 69px;
@@ -311,6 +343,9 @@ div.soc-netw img {
 }
 
 div.after-about-us {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 6px;
     background-color: #ffffff;
 }
@@ -318,7 +353,10 @@ div.after-about-us {
 
 
 div.get-a-quote {
-    height: 579px;
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 648px;
     background-color: #f06c64;
     display: flex;
     flex-direction: column;
@@ -379,18 +417,18 @@ form.form textarea::placeholder {
     font-weight: 400;
 }
 
-form.form input {
+form.form input.submit {
     background-color: #f0e7e7;
     color: #d6564f;
     border: 1px;
     border-radius: 5px;
     font-size: 12px;
+    font-weight: 900;
     line-height: 22px;
     font-family: Lato;
-    font-weight: 400;
 }
 
-form.form input:hover {
+form.form input.submit:hover {
     background-color: #d6564f;
     color: #f0e7e7;
 }
@@ -436,11 +474,17 @@ div.contacts td:nth-child(2) {
 
 
 div.after-get-a-quote {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 6px;
     background-color: #ea676b;
 }
 
 footer.footer {
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 76px;
     background-color: #2d303a;
     display: flex;
