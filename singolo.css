@@ -19,7 +19,8 @@ body {
     width: 100%;
 }
 
-header.header {
+
+div.header {
     max-width: 1020px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -32,6 +33,7 @@ header.header {
     color: #f2f2f2;
     font-family: Lato-Bold;
     font-size: 25px;
+    
 }
 
 div.singolo-label{
@@ -43,6 +45,11 @@ div.singolo-label h1{
     padding-left: 39px;
     padding-bottom: 2px;
     letter-spacing: -0.50px;
+}
+
+div.singolo-label h1::after {
+    content: "*";
+    color: #f06c64;
 }
 
 div.singolo-label p {
