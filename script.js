@@ -5,7 +5,7 @@ function onScroll(event) {
     console.log(curPos);
 
     document.querySelectorAll('#wrapper>div').forEach((el) => {
-        console.log(el.getAttribute('id'));
+        console.log(el);
         el.getAttribute('id');
     });
 

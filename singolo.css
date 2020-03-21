@@ -17,6 +17,7 @@
 
 body {
     width: 100%;
+    position: relative;
 }
 
 
@@ -33,7 +34,10 @@ div.header {
     color: #f2f2f2;
     font-family: Lato-Bold;
     font-size: 25px;
-    
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 
 div.singolo-label{
@@ -49,10 +53,6 @@ div.singolo-label h1{
 
 div.singolo-label h1::after {
     content: "*";
-    color: #f06c64;
-}
-
-div.singolo-label p {
     color: #f06c64;
 }
 
@@ -75,6 +75,10 @@ a.menu-a {
     margin-right: 29px;
 }
 
+a.active {
+    color: #f06c64;
+}
+
 a.menu-a:hover {
     color: #f06c64;
 }
@@ -87,6 +91,7 @@ div.under-header {
     box-sizing: border-box;
     height: 6px;
     background-color: #323746;
+    position: relative;
 }
 
 
