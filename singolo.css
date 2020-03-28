@@ -34,7 +34,7 @@ div.header {
     color: #f2f2f2;
     font-family: Lato-Bold;
     font-size: 25px;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     overflow: auto;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -59,20 +59,25 @@ div.singolo-label h1::after {
 ul.menu-top{
     display: flex;
     font-size: 12px;
-    padding-right: 9px;
+    padding-right: 24px;
     padding-top: 10px;
 }
 
 li {
     list-style-type: none;
     text-transform: uppercase;
+}
 
+li.menu-top-items:not(:last-child)::after {
+    content: '\00B7';
+    color: #494e62;
+    padding-right: 13px;
 }
 
 a.menu-a {
     text-decoration: none;
     color: #f2f2f2;
-    margin-right: 29px;
+    margin-right: 13px;
 }
 
 a.active {
@@ -88,6 +93,7 @@ a.menu-a:hover {
 div.under-header {
     max-width: 1020px;
     margin: 0 auto;
+    /*margin-top: 89px;*/
     box-sizing: border-box;
     height: 6px;
     background-color: #323746;
@@ -118,6 +124,11 @@ div.iPhone img:nth-child(2){
     padding-right: 20px;
 }
 
+div.iPhone a:hover {
+    transform: scale(2);
+    transition-duration: 2s;
+}
+
 div.under-slider {
     max-width: 1020px;
     margin: 0 auto;
@@ -138,7 +149,7 @@ div.services {
     background-color: #f2f2f2;
     padding-top: 68px;
     padding-left: 40px;
-
+    padding-right: 40px;
 }
 
 div.before-table p:first-child {
@@ -153,44 +164,55 @@ div.before-table p:nth-child(2) {
     color: #767e9e;
     font-family: Lato;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 30px;
     padding-top: 27px;
     letter-spacing: -0.17px;
 }
 
-table.table-services {
-    margin-top: 47px;
+div.table-services {
+    margin-top: 44px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-td.img-words {
-    vertical-align: top;
-    
+div.services-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 30px;
 }
 
-td.img-words p:first-child {
+div.image {
+    padding-top: 2px;
+}
+
+div.services-content {
+    padding-left: 20px;
+}
+
+p.services-header {
     color: #666d89;
     font-family: Lato-Black;
     font-size: 18px;
     font-weight: 400;
     line-height: 17.86px;
     vertical-align: top;
-    padding-left: 21px;
-    padding-right: 21px;
-    padding-bottom: 2px;
+  
 }
 
-td.img-words p:nth-child(2) {
+p.services-body {
     color: #767e9e;
     font-family: Lato;
     font-size: 12px;
     font-weight: 400;
     line-height: 21.56px;
     width: 220px;
-    padding: 8px 21px 32px 20px;
     hyphens: auto;
     text-align: justify;
+    padding-top: 10px;
 }
 
 
@@ -338,6 +360,9 @@ p.img-name {
     line-height: 17.86px;
     padding-top: 15px;
     padding-bottom: 10px;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 p.brief-descr {
@@ -352,6 +377,10 @@ p.brief-descr {
 
 div.soc-netw img {
     padding-right: 4px;
+}
+
+div.soc-netw img:hover {
+    filter: saturate(900%);
 }
 
 div.after-about-us {
@@ -401,13 +430,13 @@ div.form-contact {
     padding-top: 44px;
 }
 
-form.form {
+form.quote-form {
     display: flex;
     flex-direction: column;
     width: 65.5%;
 }
 
-form.form textarea {
+form.quote-form textarea {
     border-radius: 5px;
     background-color: #d6564f;
     border: 0px;
@@ -423,13 +452,34 @@ form.form textarea {
     line-height: 34px;
 }
 
-form.form textarea::placeholder {
+form.quote-form input {
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: 0px;
+    color: white;
+    font-size: 12px;
+    color: #f48c8f;
+    font-family: Lato;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 16px;
+    padding-left: 15px;
+    line-height: 36px;
+}
+
+form.quote-form textarea::placeholder {
     color: #f48c8f;
     font-family: Lato;
     font-weight: 400;
 }
 
-form.form input.submit {
+form.quote-form input::placeholder {
+    color: #f48c8f;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+form.quote-form input:nth-child(5) {
     background-color: #f0e7e7;
     color: #d6564f;
     border: 1px;
@@ -438,9 +488,10 @@ form.form input.submit {
     font-weight: 900;
     line-height: 22px;
     font-family: Lato;
+    text-align: center;
 }
 
-form.form input.submit:hover {
+form.quote-form input.submit:hover {
     background-color: #d6564f;
     color: #f0e7e7;
 }
@@ -460,27 +511,35 @@ div.contacts {
     padding-left: 20px;
 }
 
-div.contacts table img {
-    filter: invert(100%);
-}
-
 div.contacts p:first-child {
     font-size: 18px;
     line-height: 18px;
     font-weight: 900;
 }
 
-div.contacts p:nth-child(2) {
+div p.contacts-p2 {
     padding-top: 10px;
 }
 
-div.contacts table {
-    margin-top: 25px;
+div.table-contacts {
+    padding-top: 22px;
 }
 
-div.contacts td:nth-child(2) {
-    padding-left: 5px;
-    padding-bottom: 2px;
+div.contacts-row img {
+    filter: invert(100%);
+}
+
+div.contacts-row {
+    display: flex;
+}
+
+div.contacts-row div.img {
+    width: 27px;
+}
+
+div.contacts a {
+    text-decoration: none;
+    color: #f0e7e7;
 }
 
 
@@ -492,6 +551,8 @@ div.after-get-a-quote {
     height: 6px;
     background-color: #ea676b;
 }
+
+
 
 footer.footer {
     max-width: 1020px;
@@ -516,4 +577,8 @@ p.copyright {
 
 div.footer-cont img {
     padding-left: 4px;
+}
+
+div.footer-cont img:hover {
+    filter: saturate(900%);
 }

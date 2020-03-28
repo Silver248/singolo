@@ -44,42 +44,52 @@
                 <p>Our Services</p>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
-            <table class="table-services">
-                <tr>
-                    <td class="image"><img src="./assets/images/pen.png" alt=""></td>
-                    <td class="img-words">
-                        <p>Custom Design</p>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                    </td>
-                    <td class="image"><img src="./assets/images/bulb.png" alt=""></td>
-                    <td class="img-words">
-                        <p>Inovative Ideas</p>
-                        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                    </td>
-                    <td class="image"><img src="./assets/images/heart.png" alt=""></td>
-                    <td class="img-words">
-                        <p>Love Is The Answer</p>
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                    </td>
-                </tr>
-                <tr class="secondraw">
-                    <td class="image"><img src="./assets/images/phone.png" alt=""></td>
-                    <td class="img-words">
-                        <p>Responsive Layout</p>
-                        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                    </td>
-                    <td class="image"><img src="./assets/images/bubble.png" alt=""></td>
-                    <td class="img-words">
-                        <p>24 / 7 Support</p>
-                        <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-                    </td>
-                    <td class="image"><img src="./assets/images/star.png" alt=""></td>
-                    <td class="img-words">
-                        <p>Feel Like A Star</p>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                    </td>
-                </tr>
-            </table>
+            
+            <div class="table-services">
+                <div class="services-item">
+                    <div class="image"><img src="./assets/images/pen.png" alt=""></div>
+                    <div class="services-content">
+                        <p class="services-header">Custom Design</p>
+                        <p class="services-body">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="image"><img src="./assets/images/bulb.png" alt=""></div>
+                    <div class="services-content">
+                        <p class="services-header">Inovative Ideas</p>
+                        <p class="services-body">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="image"><img src="./assets/images/heart.png" alt=""></div>
+                    <div class="services-content">
+                        <p class="services-header">Love Is The Answer</p>
+                        <p class="services-body">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="image"><img src="./assets/images/phone.png" alt=""></div>
+                    <div class="services-content">
+                        <p class="services-header">Responsive Layout</p>
+                        <p class="services-body">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="image"><img src="./assets/images/bubble.png" alt=""></div>
+                    <div class="services-content">
+                        <p class="services-header">24 / 7 Support</p>
+                        <p class="services-body">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="image"><img src="./assets/images/star.png" alt=""></div>
+                    <div class="services-content">
+                        <p class="services-header">Feel Like A Star</p>
+                        <p class="services-body">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                    </div>
+                </div>               
+
+            </div>
         </div>
        
         <div class="after-services"></div>
@@ -158,30 +168,32 @@
             <p class="quote-header">Get a Quote</p>
             <p class="quote-phrase">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="form-contact">
-                <form class="form" id="quote" action="handler.php">
-                    <textarea name="Name" id="quote" cols="30" rows="1" placeholder="Name (Required)" required></textarea>
-                    <textarea name="Mail" id="quote" cols="30" rows="1" placeholder="Email (Required)" required></textarea>
-                    <textarea name="Subject" id="quote" cols="30" rows="1" placeholder="Subject"></textarea>
-                    <textarea name="Description" id="quote" cols="30" rows="6" placeholder="Describe your project in detail..."></textarea>
-                    <input class="submit" type="button" id="quote" value="Submit">
+                <form method="GET" class="quote-form" autocomplete="off">
+                    <input type="text" name="name" id="name" placeholder="Name (Required)" pattern="[^[A-Za-z\s]+$]" class="get-a-quote-form" required>
+                    <input type="email" name="email" id="email" placeholder="Email (Required)" class="get-a-quote-form" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" class="get-a-quote-form">
+                    <textarea name="DescribingProject" id="textarea" cols="30" rows="6" placeholder="Describe your project in detail..." class="get-a-quote-form"></textarea>
+                    <input type="submit" value="Submit" class="get-a-quote-form">
                 </form>
+                
+                
                 <div class="contacts">
                     <p>Contact Information</p>
-                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                    <table>
-                        <tr>
-                            <td><img src="./assets/images/location-ico.svg" alt=""></td>
-                            <td>Elm St. 14/05 Lost City</td>
-                        </tr>
-                        <tr>
-                            <td><a href="tel:+035283318635"><img src="./assets/images/phone-ico.svg" alt=""></a></td>
-                            <td>03528 331 86 35</td>
-                        </tr>
-                        <tr>
-                            <td><a href="mailto:info@singolo.com"><img src="./assets/images/mail-ico.svg" alt=""></a></td>
-                            <td>info@singolo.com</td>
-                        </tr>
-                    </table>
+                    <p class="contacts-p2">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                    <div class="table-contacts">
+                        <div class="contacts-row"> 
+                            <div class="img"><img src="./assets/images/location-ico.svg" alt=""></div>
+                            <p>Elm St. 14/05 Lost City</p>
+                        </div>
+                        <div class="contacts-row">
+                            <div class="img"><img src="./assets/images/phone-ico.svg" alt=""></div>
+                            <a href="tel:+035283318635">03528 331 86 35</a>
+                        </div>
+                        <div class="contacts-row">
+                            <div class="img"><img src="./assets/images/mail-ico.svg" alt=""></div>
+                            <a href="mailto:info@singolo.com">info@singolo.com</a>
+                        </div>
+                    </div>
                     
 
                 </div>
