@@ -13,7 +13,7 @@ const PHOTOS = document.getElementById('images');
 const SUBMIT = document.getElementById('submit');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 
-/* Scroll menu on page */
+/* Scroll menu */
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event){
@@ -92,7 +92,7 @@ PHONE_H.addEventListener('click', offHorizontalScreen);
 PORTFOLIO_MENU.addEventListener('click', (event) => {
     PORTFOLIO_MENU.querySelectorAll('.btn').forEach(el => { el.classList.remove('active') });
     event.target.classList.add('active');
-    let photosArray = document.querySelectorAll('div.photos > img');
+    let photosArray = document.querySelectorAll('div.portfolio-images > img');
     let point = event.target.innerText;
     switch(point){
         case 'All':

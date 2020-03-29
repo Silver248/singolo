@@ -583,3 +583,42 @@ div.footer-cont img {
 div.footer-cont img:hover {
     filter: saturate(900%);
 }
+
+
+
+
+
+@media screen and (max-width: 1019px) {
+
+    div.header {
+        width: 100%; 
+    }
+
+    div.slider {
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 374px) {
+
+
+
+}
