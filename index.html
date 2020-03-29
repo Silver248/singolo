@@ -16,7 +16,7 @@
                 </h1>
             </div>
             <div class="header-menu">
-                <ul class="menu-top">
+                <ul id="menu" class="menu-top">
                     <li class="menu-top-items"><a class="active menu-a" href="#home">home</a></li>
                     <li class="menu-top-items"><a class="menu-a" href="#services">services</a></li>                     
                     <li class="menu-top-items"><a class="menu-a" href="#portfolio">portfolio</a></li>
@@ -30,10 +30,10 @@
     
         <div class="slider"> 
             <div class="iPhone">
-                <a href=""><img src="./assets/images/left_arr.png" alt="arr"></a>
-                <img src="./assets/images/iPhone_Vertical.png" alt="phone">
-                <img src="./assets/images/iPhone_Horizontal.png" alt="phone">
-                <a href=""><img src="./assets/images/right_arr.png" alt="arr"></a>
+                <a href=""><img src="./assets/images/left_arr.png" alt="arr" id="btn-left"></a>
+                <img src="./assets/images/iPhone_Vertical.png" alt="phone" id="phone-vertical">
+                <img src="./assets/images/iPhone_Horizontal.png" alt="phone" id="phone-horizontal">
+                <a href=""><img src="./assets/images/right_arr.png" alt="arr" id="btn-right"></a>
             </div>      
         </div>
 
@@ -97,13 +97,13 @@
         <div class="portfolio" id="portfolio">
             <p class="portfolio-header">Portfolio</p>
             <p class="portfolio-phrase">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class="portfolio-buttons">
-                <a href="" class="portfolio-btn">All</a>
-                <a href="" class="portfolio-btn">Web Design</a>
-                <a href="" class="portfolio-btn">Graphic Design</a>
-                <a href="" class="portfolio-btn">Artwork</a>
+            <div class="portfolio-buttons" id="portfolio-btn">
+                <div class="portfolio-btn active">All</div>
+                <div class="portfolio-btn">Web Design</div>
+                <div class="portfolio-btn">Graphic Design</div>
+                <div class="portfolio-btn">Artwork</div>
             </div>
-            <div class="portfolio-images">
+            <div class="portfolio-images" id="images">
                 <img src="./assets/images/pic01.png" alt="" class="pics">
                 <img src="./assets/images/pic02.png" alt="" class="pics">
                 <img src="./assets/images/pic03.png" alt="" class="pics">
@@ -173,7 +173,7 @@
                     <input type="email" name="email" id="email" placeholder="Email (Required)" class="get-a-quote-form" required>
                     <input type="text" name="subject" id="subject" placeholder="Subject" class="get-a-quote-form">
                     <textarea name="DescribingProject" id="textarea" cols="30" rows="6" placeholder="Describe your project in detail..." class="get-a-quote-form"></textarea>
-                    <input type="submit" value="Submit" class="get-a-quote-form">
+                    <input type="submit" value="Submit" class="get-a-quote-form" id="submit">
                 </form>
                 
                 
@@ -199,7 +199,6 @@
                 </div>
             </div>
         </div>
-        
         
         <div class="after-get-a-quote"></div>
         
